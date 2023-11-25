@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.nav-head {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.modes {
+  display: flex;
+  align-items: center;
+}
+
+.mode-text {
+  margin-left: 3px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 10px;
+  }
+
+  .nav-head {
+    font-size: 18px;
+  }
+}
