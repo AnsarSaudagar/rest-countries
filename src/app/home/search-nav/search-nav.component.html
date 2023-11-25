@@ -1,0 +1,21 @@
+<div class="search-nav">
+    <div class="search">
+        <!-- <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="search" class="search-icon"></mat-icon> -->
+        <input type="text" placeholder="Search For a country">
+    </div>
+
+    <div class="search-dropdown" (click)="onClickDropdown()">
+        <span class="filter-text">Filter by Region</span>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" [fontIcon]="arrowIconName"
+            class="search-icon"></mat-icon>
+        @if(showDropdown){
+        <div class="dropdown">
+            <p>Africa</p>
+            <p>America</p>
+            <p>Asia</p>
+            <p>Europe</p>
+            <p>Oceania</p>
+        </div>
+        }
+    </div>
+</div>
