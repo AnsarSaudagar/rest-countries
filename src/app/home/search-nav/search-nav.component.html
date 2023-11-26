@@ -1,7 +1,9 @@
 <div class="search-nav">
     <div class="search">
         <!-- <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="search" class="search-icon"></mat-icon> -->
-        <input type="text" placeholder="Search For a country">
+        <input type="text" [(ngModel)]="searchCountry" (keyup)="onChangeSearchCountry()"
+            placeholder="Search For a country">
+
     </div>
 
     <div class="search-dropdown" (click)="onClickDropdown()">
