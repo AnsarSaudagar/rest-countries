@@ -1,18 +1,19 @@
 <div class="main-countries">
+    @for(country of countries;track country){
     <div class="country">
-        <img src="https://flagcdn.com/w320/in.png" alt="India">
+        <img src={{country.flags.png}} alt="India">
         <div class="country-detail">
-            <p class="country-name">India</p>
+            <p class="country-name">{{country.name.common}}</p>
             <p class="country-det">
-                <span>Population: </span>1380004385
+                <span>Population: </span>{{country.population}}
             </p>
             <p class="country-det">
-                <span>Region: </span>Asia
+                <span>Region: </span>{{country.region}}
             </p>
             <p class="country-det">
-                <span>Capital: </span>New Delhi
+                <span>Capital: </span>{{country.capital}}
             </p>
         </div>
     </div>
-
+    }
 </div>
